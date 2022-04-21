@@ -1,0 +1,31 @@
+/** Center table text */
+.cart-table {
+	text-align: center;
+}
+/** Center header text */
+.cart-table th {
+	text-align: center;
+}
+/** Quantity numbers are centered */
+.cart-table input {
+	text-align: center;
+}
+/** Plus minus button width */
+.num-btn {
+	width: 30px;
+}
+/** Gap per line */
+.cart-table tbody tr {
+	border-top: 1px dashed #cccccc;
+}
+<<<<<<< HEAD
+/** Total price bar */
+=======
+/** Total  bar */
+>>>>>>> 01657420de04e445b55df4d61bcef89c175406e8
+.total-bar {
+	margin: 20px 0;
+	background-color: #f0f7fe;
+	padding: 15px;
+	border-radius: 5px;
+}

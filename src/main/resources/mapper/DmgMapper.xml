@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cpt202a19.reservation.mapper.DmgMapper">
+<<<<<<< HEAD
+    <!-- Get DMG：List<District> findByParent(String parent) -->
+    <select id="findByParent" resultType="com.cpt202a19.reservation.entity.Dmg">
+        SELECT * FROM t_dmg WHERE parent=#{parent} ORDER BY code ASC
+    </select>
+    <!-- Get the name of the DMG area based on the DMG code：String findNameByCode(String code) -->
+=======
+    <!-- 获取DMG：List<District> findByParent(String parent) -->
+    <select id="findByParent" resultType="com.cpt202a19.reservation.entity.Dmg">
+        SELECT * FROM t_dmg WHERE parent=#{parent} ORDER BY code ASC
+    </select>
+    <!-- 根据DMG代号获取DMG区的名称：String findNameByCode(String code) -->
+>>>>>>> 01657420de04e445b55df4d61bcef89c175406e8
+    <select id="findNameByCode" resultType="java.lang.String">
+        SELECT name FROM t_dmg WHERE code=#{code}
+    </select>
+    <select id="findCodeByName" resultType="java.lang.String">
+        SELECT code FROM t_dmg WHERE name=#{name}
+    </select>
+</mapper>

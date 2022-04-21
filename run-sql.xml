@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.cpt202a19</groupId>
+  <artifactId>reservation</artifactId>
+  <version>2.5.6</version>
+  <!--这里package不能使用默认的jar,否则不会执行插件-->
+  <packaging>maven-plugin</packaging>
+  <name>facelog-sql</name>
+  <build>
+    <plugins>        
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>sql-maven-plugin</artifactId>
+        <version>1.5</version>
+        <dependencies>
+          <!-- 定义依赖的数据库驱动jar包(mysql) -->
+          <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.43</version>
+          </dependency>  
+        </dependencies>
+        <configuration>
+          <!-- 定义数据库连接参数 -->
+          <driver>com.mysql.jdbc.Driver</driver>
+          <url>jdbc:mysql://localhost:3306/</url>
+          <username>root</username>
+          <password>1111</password>
+        </configuration>
+        <executions>
+          <!-- 删除表操作 -->
+          <execution>
+            <id>clean-tables</id>
+            <configuration>
+              <srcFiles>
+                <srcFile>${project.basedir}/sql/init.sql</srcFile>
+              </srcFiles>
+            </configuration>
+          </execution> 
+          <!-- 创建表操作 -->
+          <execution>
+            <id>create-tables</id>
+            <configuration>
+              <srcFiles>
+                <srcFile>${project.basedir}/sql/t_user.sql</srcFile>
+                <srcFile>${project.basedir}/sql/t_dmg.sql</srcFile>
+                <srcFile>${project.basedir}/sql/t_information.sql</srcFile>
+              </srcFiles>
+            </configuration>
+          </execution> 
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

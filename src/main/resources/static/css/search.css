@@ -1,0 +1,29 @@
+<<<<<<< HEAD
+/** The style of the product box */
+=======
+/*商品框的样式*/
+>>>>>>> 01657420de04e445b55df4d61bcef89c175406e8
+.goods-panel {
+	width: 100%;
+	border: 1px solid#eeeeee;
+	box-shadow: 0px 0px 0px #888888;
+	padding: 3px;
+	padding-bottom: 10px;
+	margin-bottom: 30px;
+}
+<<<<<<< HEAD
+/** Item price pattern */
+.goods-panel h4 {
+	color: red;
+}
+/** Style of product name */
+=======
+/*商品价格的样式*/
+.goods-panel h4 {
+	color: red;
+}
+/*商品名称的样式*/
+>>>>>>> 01657420de04e445b55df4d61bcef89c175406e8
+.goods-panel h5 {
+	height: 60px;
+}

@@ -1,0 +1,53 @@
+<<<<<<< HEAD
+ /** icon increase color */
+=======
+ /*图标加大 颜色*/
+>>>>>>> 01657420de04e445b55df4d61bcef89c175406e8
+ .rights .fa {
+ 	font-size: 30px;
+ 	color: #667799;
+ }
+<<<<<<< HEAD
+ /** Small spacing between pictures */
+ img {
+ 	margin: 1px;
+ }
+ /** hyperlink style */
+=======
+ /*图片小间距*/
+ img {
+ 	margin: 1px;
+ }
+ /*超链接样式*/
+>>>>>>> 01657420de04e445b55df4d61bcef89c175406e8
+ .callus a {
+ 	font-size: 12px;
+ 	text-decoration: none;
+ 	color: #666666;
+ }
+<<<<<<< HEAD
+ /** high bottom padding */
+ .bottom {
+ 	margin: 10px;
+ }
+ /** Color and fill of the entire row of equity */
+=======
+ /*底部填充高*/
+ .bottom {
+ 	margin: 10px;
+ }
+ /*权益整行的颜色和填充*/
+>>>>>>> 01657420de04e445b55df4d61bcef89c175406e8
+ .rights {
+ 	width: 100%;
+ 	padding: 50px;
+ 	background-color: #F2F2F2;
+ }
+<<<<<<< HEAD
+ /** Contact us that whole line of padding */
+=======
+ /*联系我们那一整行的填充*/
+>>>>>>> 01657420de04e445b55df4d61bcef89c175406e8
+ .beforeBottom {
+ 	padding-top: 30px;
+ }

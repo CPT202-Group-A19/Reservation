@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+<<<<<<< HEAD
+		<!--Edge browser H5 compatible settings-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!--360 browser H5 compatible settings-->
+		<meta name="renderer" content="webkit" />
+		<title>Xjtluer Classroom Reservation</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--import core file-->
+=======
+		<!--edge浏览器H5兼容设置-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!--360浏览器H5兼容设置-->
+		<meta name="renderer" content="webkit" />
+		<title>Xjtluer Classroom Reservation</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--导入核心文件-->
+>>>>>>> 01657420de04e445b55df4d61bcef89c175406e8
+		<script src="../bootstrap3/js/holder.js"></script>
+		<link href="../bootstrap3/css/bootstrap.css" rel="stylesheet" type="text/css">
+		<script src="../bootstrap3/jquery-1.9.1.min.js"></script>
+		<script src="../bootstrap3/js/bootstrap.js"></script>
+<<<<<<< HEAD
+		<!-- font icon -->
+=======
+		<!-- 字体图标 -->
+>>>>>>> 01657420de04e445b55df4d61bcef89c175406e8
+		<link rel="stylesheet" href="../bootstrap3/font-awesome-4.7.0/css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="../css/top.css" />
+		<link rel="stylesheet" type="text/css" href="../css/index.css" />
+		<link rel="stylesheet" type="text/css" href="../css/layout.css" />
+		<link rel="stylesheet" type="text/css" href="../css/reg.css" />
+		<link rel="stylesheet" type="text/css" href="../css/footer.css" />
+	</head>
+
+	<body>
+<<<<<<< HEAD
+		<!--head-->
+=======
+		<!--头部-->
+>>>>>>> 01657420de04e445b55df4d61bcef89c175406e8
+		<header class="header">
+			<img src="../images/index/stumalllogo.png" alt="" />
+			<span class="pull-right"><b>Hi! </b><b>Welcome to Xjtluer Classroom Reservation System!</b></span>
+		</header>
+
+<<<<<<< HEAD
+		<!--The body of the registration box-->
+		<div class="container mycontent text-left">
+			<!--Transparent layer for registration box-->
+			<div class="regDiv">
+				<p>New user? Please get Registered here!</p>
+				<!--form start-->
+				<form id="form-reg" class="form-horizontal" role="form">
+					<!--please enter user name-->
+=======
+		<!--注册框的主体-->
+		<div class="container mycontent text-left">
+			<!--注册框的透明层-->
+			<div class="regDiv">
+				<p>New user? Please get Registered here!</p>
+				<!--表单开始-->
+				<form id="form-reg" class="form-horizontal" role="form">
+					<!--请输入用户名-->
+>>>>>>> 01657420de04e445b55df4d61bcef89c175406e8
+					<div class="form-group">
+						<label class="col-md-3 control-label">Nickname: </label>
+						<div class="col-md-8">
+							<input name="username" type="text" class="form-control" placeholder="Please enter your Nickname here">
+						</div>
+					</div>
+<<<<<<< HEAD
+					<!--Please enter password-->
+=======
+					<!--请输入密码-->
+>>>>>>> 01657420de04e445b55df4d61bcef89c175406e8
+					<div class="form-group">
+						<label class="col-md-3 control-label"> Password: </label>
+						<div class="col-md-8">
+							<input name="password" type="text" class="form-control" placeholder="Please enter your Password here">
+						</div>
+					</div>
+<<<<<<< HEAD
+					<!--Please confirm your password-->
+=======
+					<!--请确认密码-->
+>>>>>>> 01657420de04e445b55df4d61bcef89c175406e8
+					<div class="form-group">
+						<label class="col-md-3 control-label"> Confirmation: </label>
+						<div class="col-md-8">
+							<input type="text" class="form-control" placeholder="Please reenter your Password">
+						</div>
+					</div>
+<<<<<<< HEAD
+					<!--OK sign up button-->
+=======
+					<!--确定注册按钮-->
+>>>>>>> 01657420de04e445b55df4d61bcef89c175406e8
+					<div class="form-group">
+						<label class="col-md-3 control-label"></label>
+						<div class="col-md-8">
+							<input id="btn-reg" class="btn btn-primary" type="button" value="Register" />
+							<span class="pull-right"><small>Already have an account?</small><a href="login.html">Please login there!</a></span>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+<<<<<<< HEAD
+		<!--footer starts-->
+=======
+		<!--页脚开始-->
+>>>>>>> 01657420de04e445b55df4d61bcef89c175406e8
+		<footer class="footer">
+			<!-- Botton information -->
+			<div class="text-center rights container">
+				<div class="col-md-offset-2 col-md-2">
+					<span class="fa fa-thumbs-o-up"></span>
+					<p>High Quality</p>
+				</div>
+				<div class="col-md-2">
+					<span class="fa fa-address-card-o"></span>
+					<p>Personal Customization</p>
+				</div>
+				<div class="col-md-2">
+					<span class="fa fa-graduation-cap"></span>
+					<p>Desgined for Xjtluer</p>
+				</div>
+				<div class="col-md-2">
+					<span class="fa fa-bitcoin"></span>
+					<p>Well Performed</p>
+				</div>
+			</div>
+		</footer>
+<<<<<<< HEAD
+		<!--end of footer-->
+
+		<script type="text/javascript">
+			// Listen to whether the button is clicked, and execute a method if it is clicked
+=======
+		<!--页脚结束-->
+
+		<script type="text/javascript">
+			//监听按钮是否被点击，如果被点击可执行一个方法
+>>>>>>> 01657420de04e445b55df4d61bcef89c175406e8
+			$("#btn-reg").click(function() {
+				console.log($("#form-reg").serialize());
+				$.ajax({
+					url: "/users/reg",
+					type: "POST",
+					data: $("#form-reg").serialize(),
+					dataType: "json",
+					success: function(json) {
+						if (json.state == 200) {
+							alert("Successfully registered!");
+							location.href = "login.html";
+						} else {
+							alert("Registration failed!" + json.message);
+						}
+					},error:function (xhr){
+						alert("Sorry, something went wrong, please try again later!" + xhr.status)
+					}
+				});
+			});
+		</script>
+
+	</body>
+	
+</html>
